@@ -117,7 +117,7 @@ const ExternalProjectCard = ({
                           className="w-full h-full object-cover"
                           src={getYouTubeEmbedUrl(item.youtubeUrl)}
                           title="YouTube video player"
-                          frameborder="0"
+                          frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
                         ></iframe>
