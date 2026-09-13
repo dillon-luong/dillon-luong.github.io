@@ -75,7 +75,7 @@ const CONFIG = {
     email: 'dillonluong01@gmail.com',
   },
   resume: {
-    fileUrl:
+    fileUrl: '',
       // 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
