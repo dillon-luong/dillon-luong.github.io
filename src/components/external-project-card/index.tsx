@@ -67,16 +67,16 @@ const ExternalProjectCard = ({
     return array;
   };
 
-  const getYouTubeEmbedUrl = (url) => {
-    if (!url) return null;
+  const getYouTubeEmbedUrl = (url: string | undefined): string | undefined => {
+    if (!url) return undefined;
     
-    // Regular expression to extract the video ID from various YouTube URL formats
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
   
+    // match[2] contains the actual 11-character video ID group from the regex map
     return (match && match[2].length === 11) 
       ? `https://youtube.com{match[2]}` 
-      : null;
+      : undefined;
   };
 
   const renderExternalProjects = () => {
