@@ -38,31 +38,30 @@ const CONFIG = {
           description:
             '3D Roguelike centered on Golf mechanics, built on themes of Golf, Retro Television, and Dark Fantasy (11 person team)',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'src/assets/gsr-game-title.png',
           link: 'https://pseudomancer.studio/',
         },
         {
           title: 'STOMACH',
           description:
             'First-person PS1-retro-style cooking horror game set on a monstrous cruise ship (7 person team)',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          youtubeURL: 'https://youtu.be/Wbjyx-G7sKY',
           link: 'https://store.steampowered.com/app/3843830/Stomach/',
         },
         {
           title: 'HIT ME!',
           description:
             '2D action platformer emphasizing arcadey physics-based combat and gambling gameplay loop (6 person team)',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          youtubeURL:
+            'https://www.youtube.com/watch?v=CAAcnSCjZSY&t=3s',
           link: 'https://jdmg1308.itch.io/hit-me',
         },
         {
           title: 'Game Tech VR Final Project',
           description:
             'Multiplayer VR game where players control separate parts of a mech and defeat enemy hordes (4 person team)',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          youtubeURL:
+            'https://youtu.be/U9m_S9xivYY',
           link: 'https://github.com/nilava1234/VR-Arena-Shooter',
         },
         {
