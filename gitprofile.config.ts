@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Public Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['dillon-luong/genregraph', 'dillon-luong/Foodie-Backend', 'dillon-luong/gsr.github.io-site', 
+        projects: ['dillon-luong/genregraph', 'dillon-luong/FoodieBackend', 'dillon-luong/gsr.github.io-site', 
                    'Jdmg1308/Hit-Me', 'nilava1234/VR-Arena-Shooter'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
@@ -34,20 +34,44 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Golfin\' Slayer',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            '3D Roguelike centered on Golf mechanics, built on themes of Golf, Retro Television, and Dark Fantasy (11 person team)',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://pseudomancer.studio/',
         },
         {
-          title: 'Project Name',
+          title: 'STOMACH',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'First-person PS1-retro-style cooking horror game set on a monstrous cruise ship (7 person team)',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://store.steampowered.com/app/3843830/Stomach/',
+        },
+        {
+          title: 'HIT ME!',
+          description:
+            '2D action platformer emphasizing arcadey physics-based combat and gambling gameplay loop (6 person team)',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://jdmg1308.itch.io/hit-me',
+        },
+        {
+          title: 'Game Tech VR Final Project',
+          description:
+            'Multiplayer VR game where players control separate parts of a mech and defeat enemy hordes (4 person team)',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/nilava1234/VR-Arena-Shooter',
+        },
+        {
+          title: 'GenreGraph',
+          description:
+            'WIP Music discovery platform that generates interactive visualizations of user listening habits using genre similarity analysis',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://genregraph.vercel.app/',
         },
       ],
     },
@@ -80,57 +104,59 @@ const CONFIG = {
       // 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
+    'Unity',
+    'C#',
+    'C++/Unreal (learning)',
+    'Python',
     'Node.js',
-    'Nest.js',
-    'MySQL',
+    'SQL',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
+    'Golang',
+    'Typescript',
+    'Java',
+    'Html',
     'CSS',
-    'Antd',
-    'Tailwind',
+    '.NET',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Kinder Morgan',
+      position: 'Application Developer/Data Analyst',
+      from: 'June 2025',
+      to: 'May 2026',
+      // companyLink: 'https://example.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Kinder Morgan',
+      position: 'App Developer Intern',
+      from: 'June 2024',
+      to: 'August 2024',
+      // companyLink: 'https://example.com',
+    },
+    {
+      company: 'Kinder Morgan',
+      position: 'Full Stack Developer Intern',
+      from: 'May 2023',
+      to: 'August 2023',
+      // companyLink: 'https://example.com',
     },
   ],
   certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+    // {
+    //   name: 'Lorem ipsum',
+    //   body: 'Lorem ipsum dolor sit amet',
+    //   year: 'March 2022',
+    //   link: 'https://example.com',
+    // },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'University of Texas at Austin',
+      degree: 'Bachelors in Computer Science',
+      from: '2021',
+      to: '2025',
     },
   ],
   publications: [
