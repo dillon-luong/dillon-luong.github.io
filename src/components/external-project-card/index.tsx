@@ -67,6 +67,18 @@ const ExternalProjectCard = ({
     return array;
   };
 
+  const getYouTubeEmbedUrl = (url) => {
+    if (!url) return null;
+    
+    // Regular expression to extract the video ID from various YouTube URL formats
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+  
+    return (match && match[2].length === 11) 
+      ? `https://youtube.com{match[2]}` 
+      : null;
+  };
+
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
@@ -97,20 +109,37 @@ const ExternalProjectCard = ({
                   <h2 className="font-medium text-center opacity-60 mb-2">
                     {item.title}
                   </h2>
-                  {item.imageUrl && (
+                  {/* 1. Check if a YouTube URL is present and valid */}
+                  {item.youtubeUrl ? (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
+                      <div className="w-24 h-24 mask mask-squircle overflow-hidden">
+                        <iframe
+                          className="w-full h-full object-cover"
+                          src={getYouTubeEmbedUrl(item.youtubeUrl)}
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
                       </div>
                     </div>
+                  ) : (
+                    /* 2. Fallback to your original image logic if there is no YouTube link */
+                    item.imageUrl && (
+                      <div className="avatar opacity-90">
+                        <div className="w-24 h-24 mask mask-squircle">
+                          <LazyImage
+                            src={item.imageUrl}
+                            alt={'thumbnail'}
+                            placeholder={skeleton({
+                              widthCls: 'w-full',
+                              heightCls: 'h-full',
+                              shape: '',
+                            })}
+                          />
+                        </div>
+                      </div>
+                    )
                   )}
                   <p className="mt-2 text-base-content text-sm text-justify">
                     {item.description}
