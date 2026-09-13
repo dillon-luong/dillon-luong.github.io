@@ -69,7 +69,7 @@ const CONFIG = {
           description:
             'WIP Music discovery platform that generates interactive visualizations of user listening habits using genre similarity analysis',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'src/assets/genregraph-ss.png',
           link: 'https://genregraph.vercel.app/',
         },
       ],
