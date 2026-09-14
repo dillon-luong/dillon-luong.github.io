@@ -112,8 +112,8 @@ const ExternalProjectCard = ({
                   </h2>
                   {/* 1. Check if a YouTube URL is present and valid */}
                   {item.youtubeUrl ? (
-                    <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle overflow-hidden">
+                    <div className="avatar w-full opacity-90">
+                      <div className="w-full h-24 mask mask-squircle overflow-hidden">
                         <iframe
                           className="w-full h-full object-cover"
                           src={getYouTubeEmbedUrl(item.youtubeUrl)}
