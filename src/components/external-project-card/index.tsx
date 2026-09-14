@@ -142,7 +142,7 @@ const ExternalProjectCard = ({
                       </div>
                     )
                   )}
-                  <p className="mt-2 text-base-content text-sm text-justify">
+                  <p className="mt-2 text-base-content text-sm text-center">
                     {item.description}
                   </p>
                 </div>
