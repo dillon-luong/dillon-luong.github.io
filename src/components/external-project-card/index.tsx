@@ -128,7 +128,7 @@ const ExternalProjectCard = ({
                     /* 2. Fallback to your original image logic if there is no YouTube link */
                     item.imageUrl && (
                       <div className="avatar opacity-90">
-                        <div className="w-full aspect-square mask mask-squircle">
+                        <div className="w-full aspect-video mask mask-squircle">
                           <LazyImage
                             src={item.imageUrl}
                             alt={'thumbnail'}
