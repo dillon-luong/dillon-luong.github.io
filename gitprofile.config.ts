@@ -38,7 +38,7 @@ const CONFIG = {
           description:
             '3D Roguelike centered on Golf mechanics, built on themes of Golf, Retro Television, and Dark Fantasy (11 person team)',
           imageUrl:
-            '~/src/assets/gsr-game-title.png',
+            '/src/assets/gsr-game-title.png',
           link: 'https://pseudomancer.studio/',
         },
         {
@@ -69,7 +69,7 @@ const CONFIG = {
           description:
             'WIP Music discovery platform that generates interactive visualizations of user listening habits using genre similarity analysis',
           imageUrl:
-            './src/assets/genregraph-ss.png',
+            '/src/assets/genregraph-ss.png',
           link: 'https://genregraph.vercel.app/',
         },
       ],
