@@ -113,7 +113,7 @@ const ExternalProjectCard = ({
                   {/* 1. Check if a YouTube URL is present and valid */}
                   {item.youtubeUrl ? (
                     <div className="avatar w-full opacity-90">
-                      <div className="w-full h-24 mask mask-squircle overflow-hidden">
+                      <div className="w-full aspect-video overflow-hidden rounded-lg">
                         <iframe
                           className="w-full h-full object-cover"
                           src={getYouTubeEmbedUrl(item.youtubeUrl)}
@@ -128,7 +128,7 @@ const ExternalProjectCard = ({
                     /* 2. Fallback to your original image logic if there is no YouTube link */
                     item.imageUrl && (
                       <div className="avatar opacity-90">
-                        <div className="w-24 h-24 mask mask-squircle">
+                        <div className="w-full aspect-square mask mask-squircle">
                           <LazyImage
                             src={item.imageUrl}
                             alt={'thumbnail'}
